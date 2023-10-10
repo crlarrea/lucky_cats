@@ -59,6 +59,8 @@ body {
   text-transform: capitalize;
 }
 .home article p span {
+  border-top: 2px solid;
+  padding-top: 48px;
   writing-mode: vertical-rl;
   font-family: "MPLUS1p Regular";
   font-size: 36px;

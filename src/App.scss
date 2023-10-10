@@ -49,6 +49,8 @@ body {
         // content: "*";
       }
       span {
+        border-top: 2px solid;
+        padding-top:$h;
         writing-mode: vertical-rl;
         font: {
           family: "MPLUS1p Regular";
