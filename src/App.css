@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "MPLUS1p Black";
+  src: url(./assets/fonts/MPLUS1p-Black.ttf);
+}
+@font-face {
+  font-family: "Montserrat Semi Bold";
+  src: url(./assets/fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url(./assets/fonts/Montserrat-Bold.ttf);
+}
+body {
+  position: relative;
+}
+
+.home {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  /* IE and Edge */
+  -ms-overflow-style: none;
+  /* Firefox */
+  scrollbar-width: none;
+}
+.home::-webkit-scrollbar {
+  display: none;
+}
+.home article {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: center;
+}
+.home article img {
+  width: 550px;
+}
+
+h1 {
+  display: inline-flex;
+  flex-flow: column nowrap;
+  position: absolute;
+  top: 50%;
+  left: 48px;
+  font-size: 72px;
+  font-family: "MPLUS1p Black";
+  writing-mode: vertical-rl;
+}
+h1 span {
+  margin-top: 72px;
+  font-size: 36px;
+  border-left: 2px solid;
+}
+
+/*# sourceMappingURL=App.css.map */

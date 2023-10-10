@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import "./UISystem.scss";
+
+body {
+  position: relative;
+}
+.home {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  @include hideScrollbar;
+
+  article {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: center;
+
+    img {
+      width: 550px;
+    }
+  }
+}
+
+h1 {
+  display: inline-flex;
+  flex-flow: column nowrap;
+  position: absolute;
+  top: 50%;
+  left: $h;
+  font: {
+    size: $xh;
+    family: "MPLUS1p Black";
+  }
+  writing-mode: vertical-rl;
+  span {
+    margin: {
+      top: $xh;
+    }
+    font: {
+      size: $xxl;
+    }
+    border-left: 2px solid ;
+  }
+}
