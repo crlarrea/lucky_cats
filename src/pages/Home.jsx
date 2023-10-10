@@ -10,6 +10,12 @@ export const Home = () => {
       {cats.map((entry, index) => {
         return <Cats key={`cat-${index}`} props={entry} />;
       })}
+      <h2>
+        &copy; 2023{" "}
+        <a href="https://crlarrea.github.io" target="_blank">
+          crlarrea
+        </a>
+      </h2>
     </section>
   );
 };
