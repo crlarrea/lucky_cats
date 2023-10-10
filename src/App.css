@@ -95,4 +95,31 @@ h2 a {
   text-decoration: none;
 }
 
+@media only screen and (min-device-width: 220px) and (max-device-width: 767px) {
+  .home article p {
+    top: 16px;
+    column-gap: 16px;
+    font-size: 36px;
+  }
+  .home article p span {
+    padding-top: 16px;
+    font-size: 21px;
+  }
+  .home article img {
+    width: 350px;
+  }
+  h1 {
+    left: 14px;
+    font-size: 36px;
+  }
+  h1 span {
+    font-size: 18px;
+  }
+  h2 {
+    bottom: 72px;
+    right: 16px;
+    font-size: 14px;
+  }
+}
+
 /*# sourceMappingURL=App.css.map */

@@ -1,0 +1,46 @@
+@media only screen and (min-device-width: 220px) and (max-device-width: 767px) {
+  .home {
+    // background-color: red;
+    article{
+        p{
+            top:$m;
+            column-gap: $m;
+            font:{
+                size:$xxl;
+            }
+            span{
+                padding:{
+                    top:$m;
+                }
+                font:{
+                    size:$xl;
+                }
+            }
+        }
+
+        img{
+            width: 350px;;
+        }
+    }
+  }
+
+  h1 {
+    left:$s;
+    font: {
+      size: $xxl;
+    }
+    span{
+        font:{
+            size:$l;
+        }
+    }
+  }
+
+  h2{
+    bottom:$xh;
+    right:$m;
+    font:{
+        size:$s;
+    }
+  }
+}
