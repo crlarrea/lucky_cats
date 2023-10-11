@@ -11,8 +11,7 @@ export const Home = () => {
         return <Cats key={`cat-${index}`} props={entry} />;
       })}
       <h2>
-        &copy; 2023{" "}
-        <a href="https://crlarrea.github.io" target="_blank">
+        &copy; {new Date().getFullYear()} <a href="https://crlarrea.github.io" target="_blank">
           crlarrea
         </a>
       </h2>
