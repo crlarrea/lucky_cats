@@ -27,7 +27,8 @@ body {
 
     img {
       width: 550px;
-      filter: drop-shadow($s $s $h  rgba(black,0.2));
+      // filter: drop-shadow($s $s $h  rgba(black,0.2));
+      animation: float 3s infinite alternate;
     }
 
     p {
@@ -45,19 +46,15 @@ body {
         transform: capitalize;
       }
 
-      &:after {
-        // content: "*";
-      }
       span {
         border-top: 2px solid;
-        padding-top:$h;
+        padding-top: $h;
         writing-mode: vertical-rl;
         font: {
           family: "MPLUS1p Regular";
           size: $xxl;
         }
         filter: hue-rotate(45deg);
-
       }
     }
   }
@@ -85,19 +82,29 @@ h1 {
   }
 }
 
-h2{
-    position: absolute;
-    bottom: $h;
-    right:$xh;
-    font: {
-        size: $l;
-        family: "BebasNeue Regular";
-      }
-      a{
-        color: inherit;
-        text-decoration: none;
-      }
+h2 {
+  position: absolute;
+  bottom: $h;
+  right: $xh;
+  font: {
+    size: $l;
+    family: "BebasNeue Regular";
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
+@keyframes float {
+  0% {
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
+    transform: translatey(0);
+  }
+  100% {
+    filter: drop-shadow(0 25px 15px rgba(0, 0, 0, 0.2));
+    transform: translatey(-20px);
+  }
+}
 
-@import './Mobile.scss'
+@import "./Mobile.scss";
